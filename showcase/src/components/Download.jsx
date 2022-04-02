@@ -8,12 +8,21 @@ const Download = () => {
     <div className={`${styles.section} ${styles.bgWhite}`}>
       <div className={`${styles.subSection} flex-col text-center`}>
         <div>
-          <h1 className={`${styles.h1Text} ${styles.blackText}`}>Download the Source Code</h1>
-          <p className={`${styles.pText} ${styles.blackText}`}>Get the full source code on GitHub</p>
+          <h1 className={`${styles.h1Text} ${styles.blackText}`}>
+            Download the Source Code
+          </h1>
+          <p className={`${styles.pText} ${styles.blackText}`}>
+            Get the full source code on GitHub
+          </p>
         </div>
-        <button className={styles.btnPrimary}>Source Code</button>
+        <a
+          className={styles.btnPrimary}
+          href="https://github.com/iamjai-3/react-native-nft-marketplace"
+        >
+          Source Code
+        </a>{' '}
         <div className={styles.flexCenter}>
-          <img 
+          <img
             src={assets.scene}
             alt="download_png"
             className={styles.fullImg}
@@ -21,7 +30,7 @@ const Download = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Download
+export default Download;
